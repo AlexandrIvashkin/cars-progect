@@ -1,0 +1,222 @@
+body {
+	width: 100%;
+	max-width: 1000px;
+	margin: auto
+}
+
+.homeHeaderbar{
+	background-color: red;
+	h1{color: white}
+
+	.homeHeaderImg{
+	  height: 274px;
+	  
+	  div {
+	  	width:248px;
+	  	height: 140px;
+	  	float: left;
+	  	border: 1px solid grey;
+	  	background-size: 100%;
+	  	background-repeat: no-repeat;
+	  }
+
+	  $imgCars: (
+	  	img1: 'bmw.jpg',
+	  	img2: 'Bugatti.jpg',
+	  	img3: 'dodge.jpg',
+	  	img4: 'lamboghini.jpg',
+	  	img5: 'lotus.jpg',
+	  	img6: 'mercedes.jpg',
+	  	img7: 'royce.jpg',
+	  	img8: 'tesla.jpg',
+	  );
+
+	  @each $nameImgCar, $imgCar in $imgCars {
+        ##{$nameImgCar} {
+          background-image: url(../img/headerImg/#{$imgCar});
+        }
+      }
+
+	}
+}
+
+@media (max-width: 1020px) {
+	#img7, #img8, #navHeaderMenu {
+		display:none
+	}
+}
+
+@media (max-width: 1020px) {
+	.nav {
+		width: 750px
+	}
+}
+
+@media (max-width: 770px) {
+	.nav {
+		width: 500px
+	}
+}
+
+@media (max-width: 770px) {
+	#img6, #img5 {
+		display:none
+	}
+}
+
+@media (min-width: 1020px) {
+	#navHeaderMenu2 {
+		display:none
+	}
+}
+
+#navHeaderMenu2{
+	height: 50px;
+	padding-left: 20px;
+	background-color: orange;
+}
+
+#menu2 {
+	font-family: 'Lato', sans-serif;
+	font-family: 30px;
+	list-style: none;
+	position: absolute;
+	cursor: pointer;
+	padding-top: 20px;
+	color: white;
+	display: block;
+
+	&> ul{
+		display: none;
+		padding-left: 0;
+	}
+
+	p{
+		margin: 0;
+		font-weight: bold;
+	}
+	
+	li{
+		background-color: red;
+		padding-left: 10px;
+		padding: 10px;
+		margin-bottom: 2px;
+		display: block
+	}
+	
+	li:hover{
+		background-color:blue
+	}
+
+	a{
+		text-decoration: none;
+		color: white;
+		display: block;
+		height: 100%
+	}	
+
+	&:hover>ul{
+		display: block;
+	}
+}
+
+.submenu2{
+	&>ul{
+		display: none;
+		float: right;
+		position: absolute;
+		left: 170px;
+		top: 55px;
+	}
+	&>ul li{
+		list-style: none
+	}
+	&:hover>ul{
+		display: block;
+	}
+}
+
+#navHeaderMenu{
+	width:100%;
+	height:auto;
+	margin:0px auto;
+	padding-top:10px;
+}
+	#menu1{
+	  position:relative;
+	  display:block;
+	  width:100%;
+	  height:auto;
+	  z-index:10;
+	}
+		#menu1 ul{
+	  	  position:relative;
+	  	  display:block;
+	  	  margin:0px;
+	  	  padding:0px;
+	  	  width:100%;
+	 	  height:auto;
+	  	  list-style:none;
+	 	  background:#F3A601;
+		}
+		#menu1 > ul::after{
+	  	  display:block;
+	 	  width:100%;
+	 	  height:0px;
+	 	  clear:both;
+	 	  content:" ";
+		}
+			#menu1 ul li{
+			  position:relative;
+			  display:block;
+			  float:left;
+			  width:auto;
+			  height:auto;
+			}
+				#menu1 ul li a{
+				  display:block;
+				  padding:9px 25px 0px 25px;
+				  font-size:14px;
+				  font-family:Arial, sans-serif;
+				  color:#ffffef;
+				  line-height:1.3em;
+				  text-decoration:none;
+				  font-weight:bold;
+				  text-transform:uppercase;
+				  height:36px;
+				  box-sizing:border-box;
+				}
+				#menu1 ul li > a:hover, #menu1 ul li:hover > a{
+				  background:#EBBD5B;
+				  color:#2B45E0;
+				}
+					#menu1 ul li ul{
+					    position:absolute;
+					    top:36px;
+						left:0px;
+						display:none;
+						width:200px;
+						background:#EBBD5B;
+						}
+					#menu1 ul li:hover ul{display:block;}
+					#menu1 ul li ul li{
+					  float:none;
+					  width:100%;
+					}
+						#menu1 ul li ul li a{
+						  display:block;
+						  text-transform:none;
+						  height:auto;
+						  padding:7px 25px;
+						  width:100%;
+						  box-sizing:border-box;
+						  border-top:1px solid #ffffff;
+						}
+						#menu1 ul li ul li:first-child a{border-top:0px;}
+						#menu1 ul li ul li a:hover{
+						  background:#FDDC96;
+						  color:#6572BC;
+						} 
+.navBottom{
+	border: 1px solid grey;
+}

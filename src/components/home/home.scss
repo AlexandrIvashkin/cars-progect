@@ -1,0 +1,39 @@
+.homeText{
+	padding: 0 20px 0 20px;
+	text-align: justify;
+	text-indent: 20px;
+	font-size: 18px;
+}
+
+.homeImg {
+	height: 100%;
+	position: relative;
+}
+
+.homeImg img{
+	border: 1px solid grey;
+	border-radius: 10px;
+}
+
+.homeImg img:hover{
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+.imgMin{
+	width: 250px;
+	height: 200px;
+	float: left;
+	margin: 20px;
+}
+
+.imgMax{
+	width:500px;
+	height: 400px;
+	position: absolute;
+	top: 50px;
+	left: 50px;
+}
+.imgMax:hover{
+	opacity:1 !important;
+}

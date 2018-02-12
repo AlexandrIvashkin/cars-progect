@@ -1,0 +1,61 @@
+.marks{
+	height: 100%;
+}
+
+.marksImg1{
+	background-image: url('../../img/crud/marks/bmw.png');
+}
+.marksImg2{
+	background-image: url('../../img/crud/marks/bugatti.png');
+}
+.marksImg3{
+	background-image: url('../../img/crud/marks/dodge.png');
+}
+.marksImg4{
+	background-image: url('../../img/crud/marks/lamboghini.png');
+}
+.marksImg5{
+	background-image: url('../../img/crud/marks/lotus.png');
+}
+.marksImg6{
+	background-image: url('../../img/crud/marks/mercedes.png');
+}
+.marksImg7{
+	background-image: url('../../img/crud/marks/rolls.png');
+}
+.marksImg8{
+	background-image: url('../../img/crud/marks/tesla.png');
+}
+
+.linkToAuto{
+	display: block;
+	float: left;
+	text-align: center;
+	margin: 10px;
+}
+
+.linkToAuto a{
+	text-decoration: none;
+	color: black
+}
+
+.marksImg1, .marksImg2, .marksImg3, .marksImg4, .marksImg5, .marksImg6, .marksImg7, .marksImg8 {
+	width: 150px;
+	height: 150px;
+	background-size: cover;
+}
+
+.markAuto{
+	position: relative;
+	top: 65px;
+	background-color: white;
+	padding: 5px;
+	font-size: 20px;
+	border: 1px solid grey;
+	border-radius: 10px;
+	display: none
+}
+
+.linkToAuto:hover  .markAuto{
+	display: block;
+}

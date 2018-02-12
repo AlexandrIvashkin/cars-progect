@@ -1,0 +1,23 @@
+.itemsCrud{
+	margin-left: 20px;
+
+	a{
+		text-decoration: none;
+		color: white;
+		font-weight: bold;
+		display: block;
+	}
+
+	div{
+		border: 1px solid black;
+		border-radius: 10px;
+		background-color: red;
+		padding: 10px;
+		margin: 10px 0 10px 0;
+		width: 300px;
+	}
+
+	div:hover{
+		background-color: orange;
+	}
+}
